@@ -1,0 +1,510 @@
+/* COLORES:
+#463f3a (MARRON OSC)
+#8a817c (MARRON CLARO)
+#bcb8b1 (BEIGE OSC)
+#f4f3ee (BEIGE)
+#e0afa0 (SALMON)
+ */
+ @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; }
+ 
+ main .grid-container-card .card .card-body .card-text {
+   text-align: center;
+   font-size: 15px; }
+ 
+ main .grid-container-card .card .card-body .boton {
+   background-color: #bcb8b1;
+   padding: 0.75rem;
+   border-width: 1rem;
+   border-radius: 0.375rem;
+   display: inline-block;
+   color: #463f3a;
+   font-weight: bold;
+   text-decoration: none;
+   text-align: center; }
+ 
+ .main-index .img-index .container-index .content .h1-index {
+   color: #ebedee;
+   font-size: 15px; }
+ 
+ .main-index .quien-soy .presentacion {
+   font-size: 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   text-align: justify;
+   margin: 10px; }
+ 
+ main .accordion .accordion-item .accordion-collapse .accordion-body {
+   font-size: 15px;
+   color: #463f3a; }
+ 
+ .main-contacto h3 {
+   font-size: 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   text-align: center;
+   margin: 10px; }
+ 
+ .header {
+   position: sticky;
+   top: 0;
+   z-index: 5; }
+   .header__fondoColor {
+     background-color: #bcb8b1b8; }
+     .header__fondoColor a {
+       color: #463f3a;
+       text-decoration: none;
+       font-weight: bold;
+       font-size: 15px; }
+       .header__fondoColor a:hover {
+         color: #f4f3ee;
+         font-weight: bolder;
+         font-size: 25px; }
+   .header__logo {
+     height: 100px; }
+     .header__logo:hover {
+       transform: scale(1.1); }
+   .header__icono {
+     background-color: transparent;
+     transition: var(--bs-navbar-toggler-transition);
+     color: #463f3a;
+     text-decoration: none;
+     font-size: 25px;
+     border: none; }
+ 
+ .footer {
+   background-color: #bcb8b1;
+   min-height: 40vh;
+   text-align: center; }
+   .footer .Pie {
+     background-color: #f4f3ee; }
+     .footer .Pie img {
+       width: 75px; }
+   .footer__grid {
+     display: grid;
+     align-items: start;
+     margin: 0px;
+     padding-left: 0%; }
+   .footer__div h4 {
+     color: #463f3a;
+     text-decoration: underline; }
+   .footer__div ul {
+     list-style: none;
+     text-align: center;
+     margin: 0px;
+     padding-left: 0%; }
+     .footer__div ul i {
+       color: #463f3a;
+       font-size: 1.3rem;
+       margin: 5px; }
+   .footer__div .redes {
+     display: flex;
+     justify-content: center; }
+     .footer__div .redes li a i:hover {
+       font-size: 2rem;
+       font-weight: bold; }
+   .footer__div .explorar li a {
+     text-decoration: none;
+     color: #463f3a; }
+     .footer__div .explorar li a:hover {
+       font-weight: bold; }
+   .footer__div .datos {
+     color: #463f3a; }
+ 
+ h1 {
+   color: #463f3a;
+   text-align: center;
+   padding: 7px;
+   font-family: "Dancing Script", cursive;
+   font-size: 30px;
+   font-weight: bold; }
+ 
+ .h2 {
+   font-family: "Dancing Script", cursive;
+   color: #8a7e7c;
+   text-align: center;
+   margin: 40PX;
+   text-decoration: underline; }
+ 
+ main {
+   min-height: 100vh;
+   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); }
+ 
+ .main-index .img-index {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly; }
+   .main-index .img-index .container-index {
+     position: relative; }
+     .main-index .img-index .container-index img {
+       width: 170px;
+       padding: 5px; }
+       .main-index .img-index .container-index img:hover {
+         transform: scale(1.1);
+         transition: .3s; }
+     .main-index .img-index .container-index .content {
+       position: absolute;
+       bottom: 0;
+       background: #463f3a7c;
+       color: #f1f1f1;
+       width: 100%;
+       height: 20%; }
+ 
+ .main-index .quien-soy {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%; }
+   .main-index .quien-soy .fotoJimena {
+     margin: 50px; }
+ 
+ main .grid-container-card {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr); }
+   main .grid-container-card .card {
+     margin: 5px; }
+     main .grid-container-card .card:hover {
+       border-color: #463f3a;
+       border: 8px;
+       box-shadow: 0 1px 1px #8a817c, 0 0 8px #8a817c; }
+     main .grid-container-card .card .card-body {
+       display: flex;
+       flex-direction: column; }
+       main .grid-container-card .card .card-body .card-title {
+         font-size: 20px;
+         color: #463f3a;
+         text-align: center;
+         font-weight: bolder; }
+       main .grid-container-card .card .card-body .boton:hover {
+         color: #ebedee;
+         font-size: 20px;
+         background-color: #463f3a; }
+ 
+ .main-galeria .img-galeria {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between; }
+   .main-galeria .img-galeria .snip1585 {
+     background-color: #f4f3ee19;
+     color: #463f3a;
+     display: inline-block;
+     font-family: 'Roboto', sans-serif;
+     font-size: 24px;
+     margin: 10px;
+     padding: 5px;
+     overflow: hidden;
+     position: relative;
+     text-align: center;
+     width: 100%; }
+   .main-galeria .img-galeria .snip1585 * {
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     -webkit-transition: all 0.45s ease;
+     transition: all 0.2s ease; }
+   .main-galeria .img-galeria .snip1585:before,
+   .main-galeria .img-galeria .snip1585:after {
+     background-color: #f4f3ee0e;
+     border-top: 50px solid #8a817c72;
+     border-bottom: 50px solid #8a817c72;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     content: '';
+     -webkit-transition: all 0.3s ease;
+     transition: all 0.3s ease;
+     z-index: 1;
+     opacity: 0; }
+   .main-galeria .img-galeria .snip1585:before {
+     -webkit-transform: scaleY(2);
+     transform: scaleY(2); }
+   .main-galeria .img-galeria .snip1585:after {
+     -webkit-transform: scaleY(2);
+     transform: scaleY(2); }
+   .main-galeria .img-galeria .snip1585 img {
+     vertical-align: top;
+     max-width: 100%;
+     backface-visibility: hidden; }
+   .main-galeria .img-galeria .snip1585 figcaption {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     align-items: center;
+     z-index: 1;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     line-height: 1.1em;
+     opacity: 0;
+     z-index: 2;
+     -webkit-transition-delay: 0s;
+     transition-delay: 0s; }
+   .main-galeria .img-galeria .snip1585 h3 {
+     font-size: 1em;
+     font-weight: 400;
+     letter-spacing: 1px;
+     margin: 0;
+     text-transform: uppercase; }
+   .main-galeria .img-galeria .snip1585 h3 span {
+     display: block;
+     font-weight: 700; }
+   .main-galeria .img-galeria .snip1585 a {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     z-index: 3; }
+   .main-galeria .img-galeria .snip1585:hover > img,
+   .main-galeria .img-galeria .snip1585.hover > img {
+     opacity: 0.7; }
+   .main-galeria .img-galeria .snip1585:hover:before,
+   .main-galeria .img-galeria .snip1585.hover:before,
+   .main-galeria .img-galeria .snip1585:hover:after,
+   .main-galeria .img-galeria .snip1585.hover:after {
+     -webkit-transform: scale(1);
+     transform: scale(1);
+     opacity: 1; }
+   .main-galeria .img-galeria .snip1585:hover figcaption,
+   .main-galeria .img-galeria .snip1585.hover figcaption {
+     opacity: 1;
+     -webkit-transition-delay: 0.1s;
+     transition-delay: 0.1s; }
+ 
+ .main-galeria .video {
+   width: 100%; }
+ 
+ main .banner {
+   width: 100%;
+   margin: 0%;
+   margin-bottom: 10px; }
+ 
+ main .accordion .accordion-item .accordion-header .accordion-button-faq {
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+   font-size: 1rem;
+   color: #463f3a;
+   text-align: left;
+   background-color: white;
+   border: 0;
+   border-radius: 0;
+   overflow-anchor: none;
+   transition: var(--bs-accordion-transition); }
+   main .accordion .accordion-item .accordion-header .accordion-button-faq::after {
+     flex-shrink: 0;
+     width: var(--bs-accordion-btn-icon-width);
+     height: var(--bs-accordion-btn-icon-width);
+     margin-left: auto;
+     content: "";
+     background-image: var(--bs-accordion-btn-icon);
+     background-repeat: no-repeat;
+     background-size: var(--bs-accordion-btn-icon-width);
+     transition: var(--bs-accordion-btn-icon-transition); }
+   main .accordion .accordion-item .accordion-header .accordion-button-faq:not(.collapsed) {
+     color: white;
+     background-color: #8a817c;
+     box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color);
+     font-weight: bold; }
+ 
+ main .accordion .accordion-item .accordion-collapse .accordion-body strong a {
+   text-decoration: none;
+   color: #463f3a; }
+ 
+ .main-contacto .contacto {
+   font-size: 20px;
+   color: #463f3a;
+   text-align: center;
+   font-weight: text-align; }
+ 
+ .main-contacto form {
+   display: flex;
+   flex-direction: column;
+   align-items: center; }
+   .main-contacto form .texto-contacto {
+     font-size: 15px;
+     color: #463f3a; }
+   .main-contacto form input {
+     width: 45%;
+     margin: 5px; }
+     .main-contacto form input:hover {
+       background-color: #f4f3ee;
+       transform: translate(5px, 5px); }
+     .main-contacto form input::placeholder {
+       text-align: center; }
+   .main-contacto form textarea {
+     width: 45%;
+     margin: 5px; }
+     .main-contacto form textarea:hover {
+       background-color: #f4f3ee;
+       transform: translate(5px, 5px); }
+     .main-contacto form textarea::placeholder {
+       text-align: center; }
+   .main-contacto form textarea:focus,
+   .main-contacto form input:focus,
+   .main-contacto form input[type]:focus {
+     border-color: #463f3a;
+     border: 5px;
+     box-shadow: 0 1px 1px #8a817c, 0 0 8px #8a817c;
+     outline: 0 none; }
+   .main-contacto form label {
+     font-size: 18px;
+     font-weight: bold; }
+   .main-contacto form .opcion {
+     margin: 5px;
+     font-size: 20px;
+     font-weight: bolder;
+     color: #463f3a;
+     background-color: #bcb8b1; }
+     .main-contacto form .opcion:hover {
+       font-size: 22px;
+       background-color: #8a817c;
+       color: white; }
+ 
+ .main-contacto .imagen-redes {
+   display: flex;
+   justify-content: center; }
+   .main-contacto .imagen-redes a {
+     color: #463f3a;
+     font-size: 3rem;
+     margin: 5px; }
+     .main-contacto .imagen-redes a:hover {
+       font-size: 3.2rem; }
+ 
+ .main-contacto .contacto-grid iframe {
+   width: 100%;
+   padding: 15px;
+   display: flex; }
+ 
+ @media (min-width: 768px) {
+   h1 {
+     font-size: 40px; }
+   /* header */
+   .header a {
+     font-size: 20px; }
+     .header a:hover {
+       font-size: 25px; }
+   .header__logo {
+     height: 120px; }
+   /* footer */
+   .footer {
+     min-height: 20vh; }
+     .footer__grid {
+       grid-template-columns: repeat(3, 1fr); }
+   /*  html index */
+   .main-index .img-index {
+     justify-content: center; }
+     .main-index .img-index .container-index img {
+       width: 270px;
+       margin: 0px; }
+     .main-index .img-index .container-index .content .h1-index {
+       color: #ebedee;
+       font-size: 22px; }
+   .main-index .quien-soy {
+     flex-direction: row-reverse;
+     align-items: center;
+     justify-content: space-around; }
+     .main-index .quien-soy .presentacion {
+       font-size: 20px; }
+   /* html productos */
+   main .grid-container-card {
+     justify-content: space-around; }
+   /*  html galeria */
+   .main-galeria .grid-container-galeria {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     justify-items: center;
+     justify-content: center; }
+   /* html faq */
+   .accordion .accordion-item .accordion-header .accordion-button-faq {
+     font-size: 23px; }
+   .accordion .accordion-item .accordion-collapse .accordion-body {
+     font-size: 20px; }
+   /* html contacto */
+   .main-contacto h3 {
+     font-size: 25px; }
+   .main-contacto form .texto-contacto {
+     font-size: 18px; }
+   .main-contacto .imagen-redes .i-contacto {
+     font-size: 3.4rem; }
+     .main-contacto .imagen-redes .i-contacto:hover {
+       font-size: 3.8rem; } }
+ 
+ @media (min-width: 1024px) {
+   h1 {
+     font-size: 50px; }
+   /* header */
+   .header__logo {
+     height: 150px; }
+   /*  html index */
+   .main-index .img-index .container-index img {
+     width: 400px; }
+   .main-index .img-index .container-index .h1-index {
+     color: #ebedee;
+     font-size: 25px; }
+   .main-index .quien-soy .presentacion {
+     text-align: center;
+     padding: 10px; }
+   /* html productos */
+   main .grid-container-card {
+     grid-template-columns: repeat(2, 1fr); }
+   /* html galeria */
+   .main-galeria .grid-container-galeria {
+     grid-template-columns: repeat(2, 1fr); }
+   /* html contacto */
+   .main-contacto .contacto {
+     font-size: 30px; }
+   .main-contacto h3 {
+     font-size: 30px; }
+   .main-contacto form .texto-contacto {
+     font-size: 20px;
+     margin: 5px; }
+   .main-contacto form .opcion {
+     font-size: 23px; }
+     .main-contacto form .opcion:hover {
+       font-size: 25px; }
+   .main-contacto .imagen-redes .i-contacto {
+     font-size: 3.8rem; }
+     .main-contacto .imagen-redes .i-contacto:hover {
+       font-size: 4rem; }
+   .contacto-grid {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr); }
+   .maps {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between; } }
+ 
+ @media (min-width: 1044px) {
+   /*  html index */
+   .main-index .img-index {
+     justify-content: space-evenly; }
+     .main-index .img-index .container-index img {
+       width: 490px; }
+     .main-index .img-index .container-index .content .h1-index {
+       font-size: 40px; }
+   .main-index .quien-soy {
+     justify-content: center; }
+     .main-index .quien-soy .presentacion {
+       font-size: 25px;
+       text-align: left; }
+   h1 {
+     font-size: 100px; }
+   .h2 {
+     font-size: 4rem; }
+   .footerdiv__ h4 {
+     font-size: 2rem; }
+   /* html productos */
+   main .grid-container-card {
+     grid-template-columns: repeat(3, 1fr); }
+   /* html galeria */
+   .main-galeria .grid-container-galeria {
+     grid-template-columns: repeat(3, 1fr); }
+   .accordion .accordion-item .accordion-header .accordion-button-faq {
+     font-size: 1.5rem; } }
