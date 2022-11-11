@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/FAVICON.ico" type="image/ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- animaciones y font-->
+    <script src="https://kit.fontawesome.com/8ea86e8ee6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="styles/ihover.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- keywords -->
+    <meta name="keywords" content=" contacto, consultas, comprar, redes">
+    <meta name="description" content="Pagina sugerida para ponerse en contacto y poder comprar en Epikie">
+    <title>Contacto | Epikie</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <!-- NAVBAR -->
+        <!-- menu hamburguesa -->
+        <nav class="navbar navbar-expand-lg header__fondoColor">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"> <img src="../img/logo.png" alt="Logo"
+                        class="header__logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars header_icono"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav align-items-end">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                        <a class="nav-link" href="./galeria.html">Galeria</a>
+                        <a class="nav-link" href="./faq.html">Preguntas Frecuentes</a>
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-contacto grid-contacto">
+
+        <h1 class="titulosPaginas">Contacto</h1>
+        <h2 class="contacto">¡Hola!, somos Epikie, en que te podemos ayudar?</h2>
+        
+        <div class="contacto-grid">
+            <div class="contacto-grid__div maps">
+                <h3>Podes escribirnos por redes sociales</h3>
+                <div class="imagen-redes">
+                    <a href="https://www.facebook.com/epikie.bijou" target="_blank"><i class="fa-brands fa-facebook i-contacto"></i>
+                    </a>
+                
+                    <a href="https://www.instagram.com/soy_epikie/?hl=es-la" target="_blank">
+                        <i class="fa-brands fa-square-instagram i-contacto"></i></a>
+                </div>
+                <h3>Donde estamos?</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26211.297387761355!2d-58.28819877187784!3d-34.795570798103064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a329628f552cad%3A0x813d55ba09834999!2sFlorencio%20Varela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1664065751464!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contacto-grid__div">
+                <h3>Dejanos un mensaje:</h3>
+                <form action="#" method="get">
+                    <label for="Nombre" class=" texto-contacto">INGRESE SU NOMBRE</label>
+                    <input type="text" name="Nombre">
+                    <br>
+                    <label for="Email" class=" texto-contacto">INGRESE SU EMAIL</label>
+                    <input type="email" name="Email" required>
+                    <br>
+                    <label for="numero" class=" texto-contacto">INGRESE SU NUMERO</label>
+                    <input type="number" name="numero" placeholder="OPCIONAL">
+                    <br>
+                    <label for="name" class=" texto-contacto">DEJE SU MENSAJE:</label>
+                    <br>
+                    <textarea name="text" id="boton" cols="30" rows="10" placeholder="OPCIONAL"></textarea>
+                    <input type="submit" name="Enviar" class="opcion">
+                    <input type="reset" class="opcion">
+
+                </form>
+
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <section>
+        <div class="footer__grid">
+            <div class="footer__div">
+                <h4>REDES SOCIALES</h4>
+                <ul class="redes">
+                    <li><a href="https://www.facebook.com/epikie.bijou" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/soy_epikie/?hl=es-la" target="_blank"><i
+                                class="fa-brands fa-square-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer__div">
+                <h4>EXPLORAR</h4>
+                <ul class="explorar">
+                    <li><a href="./productos.html">PRODUCTOS</a></li>
+                    <li><a href="./galeria.html">GALERIA</a></li>
+                    <li><a href="./faq.html">PREGUNTAS FRECUENTES</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>
+            </div>
+            <div class=" footer__div">
+                <h4>CONTACTANOS</h4>
+                <ul class="datos">
+                    <li><em>L a V de 9 a 18hs / Sabados de 9 a 12 hs</em></li>
+                    <li><i class="fa-solid fa-phone"></i> 11-1234-5678</li>
+                    <li><i class="fa-solid fa-at"></i> soy.epikie@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> FLORENCIO VARELA</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <section class="Pie">
+      <p>Epikie ® 2008-2022 - Dev & Desing by Charry®</p>
+      <p></p>
+      <a href="https://wa.me/1132678444"><img src="../img/logoCharry.png" alt="Logo mio"></a>
+    </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="../js/index.js"></script>
+</body>
