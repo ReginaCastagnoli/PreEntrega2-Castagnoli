@@ -110,11 +110,4 @@ while (eleccion === "si") {
         alert ( "no tenemos ese producto")
     }
   eleccion = prompt ( "Desea agregar otro producto mas?");
-  while (eleccion === "no"  ){
-    alert ( "gracias por tu compra!")
-    carrito.forEach((carritoTotal) => {
-        alert ("Producto:" ${carritoTotal.producto} + "cantidad: " ${carrito.cantidad} + "total a pagar:" ${carritoTotal.cantidad * carritoTotal.precio})
-    })
-    break;
-  }
 }
