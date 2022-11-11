@@ -1,47 +1,42 @@
-//creo la clase para crear objetos con la plantilla
-class Producto {
-    constructor (tipo, descripcion, precio, estaDisponible) {
-        this.tipo = tipo;
-        this.descripcion = descripcion;
-        this.precio = precio;
-        this.estaDisponible = estaDisponible;
-    }
-}
 
-//agrego los objetos con arreglosgitt ad
+//agrego los objetos con arreglos
+const Producto = [
+    {nombre: "vela Almendra", tipo: "vela", descripcion: "frasco almendra de 290 cc.", precio: 550},
+    {nombre: "vela Hogareña", tipo: "vela", descripcion: "frasco anchoero de 100 cc.", precio: 330},
+    {nombre: "vela Clasica", tipo: "vela", descripcion: "frasco yogurtero de 200 cc.", precio: 460},
+    {nombre: "vela Eco", tipo: "vela", descripcion: "maceta de yeso nº4", precio: 280},
+    {nombre: "atrapasueño clasico", tipo: "atrapasueño", descripcion: "Incluye plumas y nombre en alambre forrado o fibrofacil.", precio: 550},
+    {nombre: "arbol de la vida ", tipo: "atrapasueño", descripcion: "Arbol de la Vida dentro de atrapasueño.", precio: 680},
+    {nombre: "vela Almendra", tipo: "atrapasueño", descripcion: "frasco almendra de 290 cc.", precio: 550},
+    {nombre: "atrapasueño con frase", tipo: "atrapasueño", descripcion: "Realizado en fibrofacil calado de 25 cm.", precio: 400},
+    {nombre: "atrapasueño luna", tipo: "atrapasueño", descripcion: "Atrapasueño en forma de luna.", precio: 520},
+    {nombre: "arcoiris guirnalda", tipo: "arcoiris", descripcion: "Ideal para decorar cuarto infantil.", precio: 750},
+    {nombre: "arcoiris colgante", tipo: "arcoiris", descripcion: "Arociris de 30 cm.", precio: 450},
+    {nombre: "llavero arcoiris", tipo: "llavero", descripcion: "Llavero en forma de Arcoiris nordico", precio: 280},
+    {nombre: "llavero cactus", tipo: "llavero", descripcion: "Llavero en forma de cactus nordico.", precio: 280}
 
-const velaAlmendra = new Producto ( "vela", " frasco almendra de 290 cc.", 550, " esta disponible" );
-const velaHogarenia = new Producto ( "vela", " frasco anchoero de 100 cc", 330, " esta disponible" );
-const velaClasica = new Producto ( "vela", "frasco yogurtero de 200 cc.", 460, " esta disponible" );
-const velaEco = new Producto ( "vela", " en maceta nº4 de yeso.", 280, " esta disponible" );
-const atrapasuenioClasico = new Producto ( "atrapasueño", " Incluye plumas y nombre en alambre forrado o fibrofacil.", 550, " esta disponible" );
-const atrapasuenioArbol = new Producto ( "atrapasueño", "Arbol de la Vida dentro de atrapasueño.", 680, " esta disponible" );
-const atrapasuenioFrase = new Producto ( "atrapasueño", "Realizado en fibrofacil calado de 25 cm." ,400,  "esta disponible" );
-const atrapasuenioLuna = new Producto ( "atrapasueño", "Atrapasueño en forma de luna. ", 520, " esta disponible" );
-const arcoirisGuirnalda = new Producto ( "arcoiris", "Ideal para decorar cuarto infantil.", 750, " esta disponible" );
-const arcoirisColgante = new Producto ( "arcoiris", "Arociris de 30 cm.", 450, " esta disponible" );
-const arcoirisLlavero = new Producto ( "llavero", "Llavero en forma de Arcoiris nordico", 280, " esta disponible" );
-const cactusLlavero = new Producto ( "llavero", "Llavero en forma de cactus nordico.", 280, " esta disponible" );
+]
 
-
+// crear carrito
+let carrito = []
 
 //entrada con prompt
+let eleccion = prompt (`hola bienvenido a Epikie,
+desea comprar algo?
+porfavor ingrese si o no`);
 
-const productoElegido = prompt(`Ingrese el numero del producto elegido
- 1. Vela Almendra
- 2. Vela Hogareña
- 3. Vela Clasica
- 4. Vela Eco
- 5. Atrapasueño Clasico
- 6. Atrapasueño Arbol de la vida
- 7. Atrapasueño con Frase
- 8. Atrapasueño Luna
- 9. Arcoiris Guirnalda
- 10. Arcoiris Colgante
- 11. Arcoiris Llavero
- 12. Cactus Llavero
- 13. Ninguno
-`);
+if ( eleccion === "si")
+{
+    alert("Excelente, mire por favor las siguientes opciones:");
+    const nuevaEleccion = Producto.map (
+        (Producto) => Producto.nombre + " " + "$" + Producto.precio );
+        alert ( nuevaEleccion.join ("/") );
+   
+} else if ( eleccion === "no" ){
+    alert ("Esperamos que vuelva pronto");
 
-//salida con alert 
-alert("Usted eligio el producto nº" + productoElegido);
+} else { 
+    alert  ("ingrese una opcion valida");
+}
+    
+
