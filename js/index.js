@@ -18,7 +18,7 @@ const Producto = [
 
 // crear carrito
 let carrito = []
-let precio = 0; 
+let precio = 0;
 //entrada con prompt, elegir si quiere comprar o no
 let eleccion = prompt(`hola bienvenido a Epikie,
 desea comprar algo?
@@ -28,6 +28,8 @@ if (eleccion === "si") {
     const nuevaEleccion = Producto.map(
         (Producto) => Producto.nombre + " " + "$" + Producto.precio);
     alert(nuevaEleccion.join("/"));
+
+
 
 
 } else if (eleccion === "no") {
@@ -41,11 +43,11 @@ if (eleccion === "si") {
 while (eleccion === "si") {
     const Producto = prompt("ingrese el nombre del articulo que desea comprar:");
 
-    if (Producto.toLowerCase == "vela Almendra" || Producto.toLowerCase == "vela Hogareña"
-        || Producto.toLowerCase == "vela Clasica" || Producto.toLowerCase == "vela Eco"
-        || Producto.toLowerCase == "atrapasueño clasico" || Producto.toLowerCase == "arbol de la vida"
-        || Producto.toLowerCase == "atrapasueño con frase" || Producto.toLowerCase == "atrapasueño luna" || Producto.toLowerCase == "arcoiris guirnalda"
-        || Producto.toLowerCase == "arcoiris colgante" || Producto.toLowerCase == "llavero arcoiris" || Producto.toLowerCase == "llavero cactus") {
+    if (Producto === "vela Almendra" || Producto === "vela Hogareña"
+        || Producto === "vela Clasica" || Producto === "vela Eco"
+        || Producto === "atrapasueño clasico" || Producto === "arbol de la vida"
+        || Producto === "atrapasueño con frase" || Producto === "atrapasueño luna" || Producto === "arcoiris guirnalda"
+        || Producto === "arcoiris colgante" || Producto === "llavero arcoiris" || Producto === "llavero cactus") {
 
         switch (Producto) {
             case "vela almendra":
@@ -83,7 +85,7 @@ while (eleccion === "si") {
             case "arcoiris guirnalda":
                 precio: 750;
                 break;
-                
+
             case "arcoiris colgante":
                 precio: 450;
                 break;
@@ -99,9 +101,20 @@ while (eleccion === "si") {
             default:
                 break;
         }
-        // cantidad de productos
-
-
+        // queda haciendo un bucle
+    let cantidad = parseInt(prompt("Cuantas unidades quiere comprar?"));
+    
+    carrito.push ({Producto, precio, cantidad});
+    alert(carrito);
+    } else {
+        alert ( "no tenemos ese producto")
     }
-
+  eleccion = prompt ( "Desea agregar otro producto mas?");
+  while (eleccion === "no"  ){
+    alert ( "gracias por tu compra!")
+    carrito.forEach((carritoTotal) => {
+        alert ("Producto:" ${carritoTotal.producto} + "cantidad: " ${carrito.cantidad} + "total a pagar:" ${carritoTotal.cantidad * carritoTotal.precio})
+    })
+    break;
+  }
 }
